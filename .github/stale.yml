@@ -1,0 +1,54 @@
+---
+# Configuration for probot-stale - https://github.com/probot/stale
+
+# Number of days of inactivity before becoming stale
+daysUntilStale: 90
+
+# Days of inactivity before closing stale items
+daysUntilClose: 30
+
+# Only check items with these labels (disabled)
+onlyLabels: []
+
+# Labels that prevent staleness
+exemptLabels:
+  - pinned
+  - security
+  - planned
+
+# Project exemption
+exemptProjects: false
+
+# Milestone exemption
+exemptMilestones: false
+
+# Assignee exemption
+exemptAssignees: false
+
+# Label for stale items
+staleLabel: wontfix
+
+# Actions per hour (1-30)
+limitPerRun: 30
+
+pulls:
+  markComment: >-
+    This pull request has been marked 'stale' due to lack of recent activity.
+    If there is no further activity, the PR will be closed in another 30 days.
+    Thank you for your contribution!
+  unmarkComment: >-
+    This pull request is no longer marked for closure.
+  closeComment: >-
+    This pull request has been closed due to inactivity. If you feel this is
+    in error, please reopen the pull request or file a new PR with the relevant
+    details.
+
+issues:
+  markComment: >-
+    This issue has been automatically marked as stale because it has not had
+    recent activity. It will be closed if no further activity occurs.
+  unmarkComment: >-
+    This issue is no longer marked for closure.
+  closeComment: >-
+    This issue has been automatically closed due to inactivity.
+    Feel free to reopen if the issue still needs attention.
