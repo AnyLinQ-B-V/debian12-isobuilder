@@ -68,7 +68,13 @@ This is intended for automated installs and will destroy all data on the target 
 - Lynis states secure boot is not enabled (`/sys/firmware/efi/efivars/SecureBoot-*`)
 - `/boot` needs `nodev,noexec,nosuid`
 
+---
+
 <div align="center">
 Created and maintained by <a href="https://www.anylinq.com">anylinq B.V.</a><br/><br/>
 <a href="https://www.anylinq.com"><img src="https://anylinq.com/hubfs/AnyLinQ%20transparant.png" width="120" alt="anylinq Logo"/></a>
 </div>
+
+---
+
+<sub>Author: Ronny Roethof (<a href="mailto:ronny@roethof.net">ronny@roethof.net</a>)</sub>
